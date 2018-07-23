@@ -1,20 +1,33 @@
 .Story {
-  border: 1px solid green;
   max-width: 400px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.Story__content {
+  padding: 0 20px;
 }
 
 .Image__container {
-  max-width: 400px;
-  max-height: 400px;
+  width: 400px;
+  height: 200px;
+  overflow: hidden;
 }
 
 .Image__container img {
-  object-fit: contain;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
 }
 
 .Story__div--row {
   display: flex;
   justify-content: space-between;
+}
+
+.description {
+  height: 100px;
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
 }

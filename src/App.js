@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
+import Story from './Story';
 
 class App extends Component {
   state = {
@@ -22,12 +23,16 @@ class App extends Component {
     } catch (e) {
       console.log('There was an error!');
     }
-    this.setState(rawData.data.data);
+    this.setState({ data: rawData.data.data });
   }
   render() {
+    const storyLis = this.state.data.map(story => {
+      return <Story storyData={story} />;
+    });
     return (
       <div className="App">
-        <div />
+        <h1>Stories</h1>
+        <ul>{storyLis}</ul>
       </div>
     );
   }

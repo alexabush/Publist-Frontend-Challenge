@@ -27,11 +27,11 @@ class App extends Component {
   }
   render() {
     const storyLis = this.state.data.map(story => {
-      return <Story storyData={story} />;
+      return <Story key={story.url} storyData={story} />;
     });
     return (
       <div className="App">
-        <h1>Stories</h1>
+        <h1>Publist</h1>
         <ul>{storyLis}</ul>
       </div>
     );

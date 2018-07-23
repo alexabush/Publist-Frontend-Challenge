@@ -3,17 +3,16 @@ import './Story.css';
 
 class Story extends Component {
   state = {};
+
+  toUrl = () => {
+    window.location = this.props.storyData.url;
+  };
+
   render() {
-    const {
-      image_url,
-      url,
-      title,
-      description,
-      read_time
-    } = this.props.storyData;
+    const { image_url, title, description, read_time } = this.props.storyData;
     const score = Math.round(this.props.storyData.score);
     return (
-      <div className="Story">
+      <div className="Story" onClick={this.toUrl}>
         <div className="Image__container">
           <img src={image_url} alt="" />
         </div>

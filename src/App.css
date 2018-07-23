@@ -1,9 +1,14 @@
 * {
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 .App {
   text-align: center;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 ul {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Story.css';
+
 class Story extends Component {
   state = {};
   render() {

@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link changes the class when hovered 1`] = `
+<div
+  className="Story"
+>
+  <div
+    className="Image__container"
+  >
+    <img
+      alt=""
+      src="https://www.mercurynews.com/wp-content/uploads/2018/06/SJM-L-SUNNYTAX-0607-0.jpg"
+    />
+  </div>
+  <div
+    className="Story__content"
+  >
+    <h2>
+      Google, Facebook, Apple, Amazon may pay more to operate in Sunnyvale
+    </h2>
+    <div
+      className="Story__div--row"
+    >
+      <p>
+        Score: 
+        80
+      </p>
+      <p>
+        The Mercury News
+      </p>
+      <p>
+        Read Time: 
+        120
+        s
+      </p>
+    </div>
+  </div>
+</div>
+`;

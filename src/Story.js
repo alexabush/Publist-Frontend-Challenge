@@ -18,7 +18,6 @@ class Story extends Component {
         </div>
         <div className="Story__content">
           <h2>{title}</h2>
-          {/* <p className="description">{description}</p> */}
           <div className="Story__div--row">
             <p>Score: {score}</p>
             <p>{this.props.storyData.site.name}</p>
